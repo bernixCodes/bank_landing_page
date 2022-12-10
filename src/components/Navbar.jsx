@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center ">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-      <ul className="sm:flex hidden justify-end items-center flex-1">
+      <ul className="sm:flex hidden justify-end items-center flex-1 navbar">
         {navLinks.map((nav, idx) => (
           <li
             key={nav.id}
@@ -33,7 +33,7 @@ const Navbar = () => {
             toggle ? "flex" : "hidden"
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl `}
         >
-          <ul className="flex flex-col justify-end items-center flex-1">
+          <ul className="flex flex-col justify-end items-center flex-1 sidebar">
             {navLinks.map((nav, idx) => (
               <li
                 key={nav.id}
